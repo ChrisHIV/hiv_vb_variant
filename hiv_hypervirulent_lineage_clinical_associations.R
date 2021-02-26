@@ -10,7 +10,8 @@ library(lme4)
 # WARNING: deletes all objects in your R session's memory
 rm(list = ls()) 
 
-setwd("~/Dropbox (Infectious Disease)/BEEHIVE/LineageEffect/AssociationTesting_PaperVersion/")
+# Change directory appropriately:
+setwd("replace this bit by the path to your directory with the data")
 
 # Read in the input csvs. For you, lucky reader, this is after much data
 # wrangling.
