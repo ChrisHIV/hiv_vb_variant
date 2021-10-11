@@ -73,6 +73,17 @@ lmm <- lmer(data = df_cd4_decline,
               (years_since_diagnosis | id_paper))  
 summary(lmm)
 
+# Three "simple/crude" measures of the fraction of variance explained by the lmm.
+# Thank you Ben Bolker https://bbolker.github.io/mixedmodels-misc/glmmFAQ.html#how-do-i-compute-a-coefficient-of-determination-r2-or-an-analogue-for-glmms
+# Also note this on-point tweet https://twitter.com/GinaMCalabrese/status/1364591840754880515
+r2.corr.mer <- function(m) {
+  lmfit <-  lm(model.response(model.frame(m)) ~ fitted(m))
+  summary(lmfit)$r.squared
+}
+r2.corr.mer(lmm)
+1 - var(residuals(lmm)) / var(model.response(model.frame(lmm)))
+cor(model.response(model.frame(lmm)), predict(lmm, type = "response"))^2
+
 lmm_adjusted_for_vl <- lmer(data = df_cd4_decline, 
                             # Model CD4 counts as a linear function of time,
                             cd4_count ~ years_since_diagnosis +  
