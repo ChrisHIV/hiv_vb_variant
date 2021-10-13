@@ -1,1 +1,1 @@
-Illustratory code for Wymant et al. 2021 concerning a hypervirulent HIV-1 lineage. One script for analysing the viral load, pre-treatment CD4 count, and mortality data; one for detecting the lineage in a BEEHIVE phylogeny, and its association with higher viral loads there.
+Illustratory code for Wymant et al. 2021 concerning a hypervirulent HIV-1 lineage.
