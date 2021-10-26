@@ -64,9 +64,9 @@ df_differences <- map(genes, function(gene_) {
     map(toupper)
 
   # Check the three expected seq names are present
-  name_hxb2 <- paste0("HXB2_", gene_)
-  name_dutch_b <- paste0("OtherDutchB_", gene_)
-  name_lineage <- paste0("VB_", gene_)
+  name_hxb2 <- "HXB2"
+  name_dutch_b <- "DutchSubtypeB"
+  name_lineage <- "VB"
   stopifnot(name_hxb2 %in% names(aln))
   stopifnot(name_dutch_b %in% names(aln))
   stopifnot(name_lineage %in% names(aln))
