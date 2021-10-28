@@ -97,6 +97,9 @@ for (pos in 1:length_aln) {
       seq_lineage[[pos]] == "-") {
     next
   }
+  
+  # Manual hack: R means A or G so that's not a SNP
+  if (seq_dutch_b[[pos]] == "R" && seq_lineage[[pos]] == "A") next
 
   if (! seq_dutch_b[[pos]] %in% bases_ok) {
     stop(paste("Unexpected base", seq_dutch_b[[pos]], "in seq", name_dutch_b, 
@@ -213,3 +216,4 @@ ggsave(file_out_snps_raw,
 # deviates most from the null. Calculate its two-tailed p value, unadjusted for
 # multiple testing:
 2 * sum(snps_over_segments_simulation[5,] >= 32) / num_multinomial_draws
+# 2 * sum(snps_over_segments_simulation[9,] >= 21) / num_multinomial_draws # <- for when 20 segments are used
