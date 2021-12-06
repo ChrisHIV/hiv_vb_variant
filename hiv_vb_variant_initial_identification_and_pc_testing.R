@@ -14,7 +14,7 @@ rm(list = ls())
 # Change directory appropriately:
 setwd("replace this bit by the path to your directory with the data")
 
-# Dataframe with VLs and PCs. Loadinf takes a few seconds - 50MB 
+# Dataframe with VLs and PCs. Loading takes a few seconds - 50MB 
 df <- read_csv("BEEHIVE_VLs.csv")
 
 tree <- read.tree("BEEHIVE_tree.tree")
