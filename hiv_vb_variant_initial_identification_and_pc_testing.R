@@ -1,5 +1,5 @@
-# Author: Chris Wymant
-# Acknowledgment: I wrote this while funded by ERC Advanced Grant PBDR-339251
+# Authors: Chris Wymant and Francois Blanquart 
+# Acknowledgment: Chris wrote this while funded by ERC Advanced Grant PBDR-339251
 # and a Li Ka Shing Foundation grant, both awarded to Christophe Fraser.
 # Abbreviations: VL = viral load (log10 copies per ml), PC = principal component,
 # df = dataframe
