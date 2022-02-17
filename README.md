@@ -1,1 +1,1 @@
-Code for [Wymant et al. Science 2022](https://doi.org/10.1126/science.abk1688) concerning the highly virulent subtype-B "VB" HIV-1 variant. Accessible summary [here](https://www.beehive.ox.ac.uk/hiv-lineage).
+Code for [Wymant et al. Science 2022](https://doi.org/10.1126/science.abk1688) concerning the highly virulent subtype-B "VB" HIV-1 variant. An accessible summary of that study is [here](https://www.beehive.ox.ac.uk/hiv-lineage). The code here uses the supplementary data files that come with the paper.
